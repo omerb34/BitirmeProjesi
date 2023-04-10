@@ -29,6 +29,9 @@ Feature:TC01_Dean_mesajlari goruntuleyebilmelidir
         Then Kullanıcı Contact Get All alanında yer alan mesajların subject bilgilerini görüntüler
           Then kullanici sayfayi kapatir
 
+          Scenario: TC06
+            Then
+
 
 
 
