@@ -49,7 +49,8 @@ public class US07_Fatih {
 
     @Then("Then Kullanici Contact Get All alaninda yer alan mesajlari goruntuler")
     public void thenKullaniciContactGetAllAlanindaYerAlanMesajlariGoruntuler() {
-        Assert.assertTrue(loginPageFatih.mesajlar.isDisplayed());
+        Assert.assertTrue(loginPageFatih.deanMessages.isDisplayed());
+
     }
 
     @Then("Kullanici Contact Get All alaninda yer alan mesajlarin yazarlarini goruntuler")
@@ -75,6 +76,11 @@ public class US07_Fatih {
     @Then("Kullanıcı Contact Get All alanında yer alan mesajların subject bilgilerini görüntüler")
     public void kullanıcıContactGetAllAlanındaYerAlanMesajlarınSubjectBilgileriniGoruntuler() {
         Assert.assertTrue(loginPageFatih.messageOfSubject.isDisplayed());
+    }
+
+    @Then("Kullanıcı Vice Dean sayfasinda Contact Get All alanında yer alan Contact Message yazısini goruntuler")
+    public void kullanıcıViceDeanSayfasindaContactGetAllAlanındaYerAlanContactMessageYazısiniGoruntuler() {
+        Assert.assertTrue(loginPageFatih.deanMesajPage.isDisplayed());
     }
 }
 
