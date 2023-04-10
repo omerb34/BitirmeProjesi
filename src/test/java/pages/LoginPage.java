@@ -34,6 +34,42 @@ public class LoginPage {
     @FindBy(xpath = "//*[.='Contact Message']")
     public WebElement contactMessageHeader;
 
+    @FindBy(xpath = "(//table//tr//th)[5]")
+    public WebElement messageKutusu;
+
+    @FindBy(xpath = "(//tbody//tr//td[5])[1]")
+    public WebElement messajIcerik;
+
+    @FindBy(xpath = " (//table//tr/th)[1]")
+    public WebElement NameKutusu;
+
+    @FindBy(xpath = "(//tbody/tr//td[1])[1]")
+    public WebElement nameIcerik;
+
+    @FindBy(xpath = "(//table//tr/th)[2]")
+    public WebElement emailKutusu;
+
+    @FindBy(xpath = "(//tbody/tr//td[2])[1]")
+    public WebElement emailIcerik;
+
+    @FindBy(xpath = "(//table//tr/th)[2]")
+    public WebElement subjectKutusu;
+
+    @FindBy(xpath = "(//tbody/tr//td[4])[1]")
+    public WebElement subjectIcerik;
+
+    @FindBy(xpath = "(//table//tr/th)[3]")
+    public WebElement dateKutusu;
+
+    @FindBy(xpath = "(//tbody/tr//td[3])[1]")
+    public WebElement dateIcerik;
+
+
+
+
+
+
+
 
 
 
