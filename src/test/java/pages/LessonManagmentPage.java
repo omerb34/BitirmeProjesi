@@ -42,6 +42,9 @@ public class LessonManagmentPage {
     @FindBy(xpath = "(//*[.='Lesson Created'])[3]")
     public WebElement lessonCreated;
 
+    @FindBy(xpath = "//*[@class=\"Toastify__toast-container Toastify__toast-container--top-center\"]")
+    public WebElement jSonParseEror;
+
 
 
 

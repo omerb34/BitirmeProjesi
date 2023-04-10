@@ -85,5 +85,22 @@ public class US08Omer {
         lessonManagmentPage.lessonCreated.isDisplayed();
 
     }
+
+    @When("kullanici Credit Score icin harf girer")
+    public void kullaniciCreditScoreIcinHarfGirer() {
+        lessonManagmentPage.creditScore.sendKeys("onüç");
+    }
+
+    @Then("kullanici {string} uyarisini almalidir")
+    public void kullaniciUyarisiniAlmalidir(String arg0) {
+        Assert.assertTrue(lessonManagmentPage.jSonParseEror.isDisplayed());
+
+    }
+
+    @When("kullanici Credit Score icin ozel karakter girer")
+    public void kullaniciCreditScoreIcinOzelKarakterGirer() {
+        lessonManagmentPage.creditScore.sendKeys("**!!??");
+
+    }
 }
 
