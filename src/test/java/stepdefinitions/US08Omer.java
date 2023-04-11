@@ -102,5 +102,15 @@ public class US08Omer {
         lessonManagmentPage.creditScore.sendKeys("**!!??");
 
     }
+
+    @When("kullanici {string} kutucugunun varligini dogrular")
+    public void kullaniciKutucugununVarliginiDogrular(String arg0) {
+        Assert.assertTrue(lessonManagmentPage.compulsoryYazisi.getText().contains("Compulsory"));
+    }
+
+    @Then("kullanici Compulsory kutucuguna tiklar")
+    public void kullaniciCompulsoryKutucugunaTiklar() {
+        lessonManagmentPage.compulsoryKutucuk.click();
+    }
 }
 
