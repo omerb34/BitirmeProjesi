@@ -12,6 +12,7 @@ public class LessonManagmentPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+
     @FindBy(xpath = "(//*[.='Lesson Management'])[4]")
     public WebElement lessonManagment;
 
@@ -44,6 +45,14 @@ public class LessonManagmentPage {
 
     @FindBy(xpath = "//*[@class=\"Toastify__toast-container Toastify__toast-container--top-center\"]")
     public WebElement jSonParseEror;
+
+    @FindBy(xpath = "//*[@id=\"compulsory\"]")
+    public WebElement compulsoryKutucuk;
+
+    @FindBy(xpath = "//*[@class=\"form-check-label\"] ")
+    public WebElement compulsoryYazisi;
+
+
 
 
 

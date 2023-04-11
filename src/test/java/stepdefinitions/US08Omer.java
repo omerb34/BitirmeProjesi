@@ -15,7 +15,8 @@ public class US08Omer {
 
     LessonManagmentPage lessonManagmentPage= new LessonManagmentPage();
     LoginPage loginPage= new LoginPage();
-    Faker faker=new Faker();
+    Faker faker= new Faker();
+
 
 
     @Given("kullanici sayfaya gider ve Vice Dean olarak Login olur")
@@ -101,6 +102,16 @@ public class US08Omer {
     public void kullaniciCreditScoreIcinOzelKarakterGirer() {
         lessonManagmentPage.creditScore.sendKeys("**!!??");
 
+    }
+
+    @When("kullanici {string} kutucugunun varligini dogrular")
+    public void kullaniciKutucugununVarliginiDogrular(String arg0) {
+        Assert.assertTrue(lessonManagmentPage.compulsoryYazisi.getText().contains("Compulsory"));
+    }
+
+    @Then("kullanici Compulsory kutucuguna tiklar")
+    public void kullaniciCompulsoryKutucugunaTiklar() {
+        lessonManagmentPage.compulsoryKutucuk.click();
     }
 }
 
