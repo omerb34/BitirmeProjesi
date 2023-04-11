@@ -10,27 +10,30 @@ Feature:TC01_Dean_mesajlari goruntuleyebilmelidir
     Then Kullanici Main Menu alaninda yer alan Contact Get All linkini tiklar
 
     Scenario: TC01
+    Then Kullanıcı Vice Dean sayfasinda Contact Get All alanında yer alan Contact Message yazısini goruntuler
+      Then kullanici sayfayi kapatir
+
+    Scenario: TC02
       Then Then Kullanici Contact Get All alaninda yer alan mesajlari goruntuler
       Then kullanici sayfayi kapatir
 
-      Scenario: TC02
+      Scenario: TC03
       Then Kullanici Contact Get All alaninda yer alan mesajlarin yazarlarini goruntuler
         Then kullanici sayfayi kapatir
 
-      Scenario: TC03
+      Scenario: TC04
         Then Kullanici Contact Get All alaninda yer alan mesajlarin e-maillerini goruntuler
         Then kullanici sayfayi kapatir
 
-      Scenario: TC04
+      Scenario: TC05
       Then Kullanici Contact Get All alaninda yer alan mesajlarin gonderilme tarihlerini goruntuler
         Then kullanici sayfayi kapatir
 
-        Scenario: TC05
+        Scenario: TC06
         Then Kullanıcı Contact Get All alanında yer alan mesajların subject bilgilerini görüntüler
           Then kullanici sayfayi kapatir
 
-          Scenario: TC06
-            Then
+
 
 
 

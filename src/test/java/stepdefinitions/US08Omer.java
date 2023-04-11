@@ -15,7 +15,8 @@ public class US08Omer {
 
     LessonManagmentPage lessonManagmentPage= new LessonManagmentPage();
     LoginPage loginPage= new LoginPage();
-    Faker faker=new Faker();
+    Faker faker= new Faker();
+
 
 
     @Given("kullanici sayfaya gider ve Vice Dean olarak Login olur")

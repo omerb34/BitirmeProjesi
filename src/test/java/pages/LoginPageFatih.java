@@ -29,7 +29,10 @@ public class LoginPageFatih {
     public WebElement contactGetAll;
 
     @FindBy(xpath = "//*[@class='fw-bold p-3 card-header']")
-    public WebElement mesajlar;
+    public WebElement deanMesajPage;
+
+    @FindBy(xpath = "//tbody/tr[1]/td[5]")
+    public WebElement deanMessages;
 
     @FindBy(xpath = "(//tbody//tr//td[1])[1]")
     public WebElement mesajlarinYazarlari;
@@ -42,4 +45,28 @@ public class LoginPageFatih {
 
     @FindBy(xpath = "(//tbody//tr//td[4])[1]")
     public WebElement messageOfSubject;
+
+    @FindBy(xpath = "//*[@class='fw-semibold text-white bg-primary navbar-toggler collapsed']")
+    public WebElement viceDeanMenuButton;
+
+    @FindBy(xpath = "(//*[@class='nav-link'])[11]")
+    public WebElement viceDeanContactGetAll;
+
+    @FindBy(xpath = "//*[@class='fw-bold p-3 card-header']")
+    public WebElement viceDeanContactMessagePage;
+
+    @FindBy(xpath = "//tbody/tr[1]/td[5]")
+    public WebElement viceDeanMessages;
+
+    @FindBy(xpath = "(//tbody//tr//td[1])[1]")
+    public WebElement viceDeanMessageYazar;
+
+    @FindBy(xpath = "//tbody/tr[1]/td[2]")
+    public WebElement viceDeanEmail;
+
+    @FindBy(xpath = "//tbody/tr[1]/td[2]")
+    public WebElement viceDeanMesajTarih;
+
+    @FindBy(xpath = "//tbody/tr[1]/td[4]")
+    public WebElement viceDeanSubject;
 }
