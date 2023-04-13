@@ -14,9 +14,13 @@ Hooks : Her bir Scenario yada Scenario Outline dan ONCE yada SONRA calismasini i
 Burda onemli olan raporlama isleminin ekran goruntusuyle birlikde Hooks yardimiyla yapilmasidir
  */
     @Before
-    public void setUpScenarios(){
-        System.out.println("Before Metotu");
+  public void setUpScenarios(){
+       System.out.println("Before Metotu");
+  }
+    public void schollManSetup(){
+        schollManSetup();
     }
+
     @After
     public void tearDownScenarios(Scenario scenario){
         System.out.println("After Metotu");
