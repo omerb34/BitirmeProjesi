@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 11, 2023 03:10:23 PM</span></a>
+<a href="#"><span class="badge badge-primary">Apr 11, 2023 05:44:40 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 11, 2023 03:10:23 PM</h3>
+<h3>Apr 11, 2023 05:44:40 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 11, 2023 03:11:17 PM</h3>
+<h3>Apr 11, 2023 05:44:58 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>71</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>54</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Vice Dean ders olusturabilmelidir":52.611
+"TC01_Dean_mesajlari goruntuleyebilmelidir":17.452
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@Us08Omer</td>
+<td>@us07_fatih</td>
 <td>6</td>
 <td>0</td>
 <td>0</td>
@@ -213,7 +213,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 71,
+passGrandChild: 54,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +238,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Us08Omer</a>
+<a class="dropdown-item" href="#">@us07_fatih</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +249,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Vice Dean ders olusturabilmelidir</p>
+            <p class="name">TC01_Dean_mesajlari goruntuleyebilmelidir</p>
             <p class="text-sm">
-              <span>3:10:25 PM</span> / <span>00:00:52:611</span>
+              <span>5:44:40 PM</span> / <span>00:00:17:452</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +259,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Vice Dean ders olusturabilmelidir</h5>
-<span class='badge badge-success'>04.11.2023 3:10:25 PM</span>
-<span class='badge badge-danger'>04.11.2023 3:11:17 PM</span>
-<span class='badge badge-default'>00:00:52:611</span>
+<h5 class="test-status text-pass">TC01_Dean_mesajlari goruntuleyebilmelidir</h5>
+<span class='badge badge-success'>04.11.2023 5:44:40 PM</span>
+<span class='badge badge-danger'>04.11.2023 5:44:58 PM</span>
+<span class='badge badge-default'>00:00:17:452</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,38 +274,48 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01_sign_olup_lesson_mangmente_tiklama</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullanici_sayfaya_gider_ve_vice_dean_olarak_login_olur()">
-                <span>Given kullanici sayfaya gider ve Vice Dean olarak Login olur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_anasayfaya_gider()">
+                <span>Given Kullanici Anasayfaya gider</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US07Omer.kullanici_hesabina_erisim_sagladigini_dogrular()">
-                <span>Then kullanici hesabina erisim sagladigini dogrular</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_login_butonuna_tiklar()">
+                <span>When Kullanici login butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US07Omer.kullanici_menu_sekmesine_tiklar()">
-                <span>When kullanici menu sekmesine tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_user_name_alanina_valid_bir_değer_girer()">
+                <span>Then Kullanici user name alanina valid bir değer girer</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullanici_lesson_managment_e_tiklar()">
-                <span>Then kullanici Lesson Managment'e tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_password_alanina_valid_bir_değer_girer()">
+                <span>Then Kullanici password alanina valid bir değer girer</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonATiklar()">
-                <span>Then kullanici lesson'a tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullaniciLastLoginButonunaTiklar()">
+                <span>Then Kullanici lastLogin butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonsManagmanteUlastiginiDogrular()">
-                <span>Given Kullanici Lessons Managmante ulastigini dogrular</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_menu_butonuna_tiklar()">
+                <span>Then Kullanici menu butonuna tiklar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_main_menu_alaninda_yer_alan_contact_get_all_linkini_tiklar()">
+                <span>Then Kullanici Main Menu alaninda yer alan Contact Get All linkini tiklar</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanıcıViceDeanSayfasindaContactGetAllAlanındaYerAlanContactMessageYazısiniGoruntuler()">
+                <span>Then Kullanıcı Vice Dean sayfasinda Contact Get All alanında yer alan Contact Message yazısini goruntuler</span>
       <div>
       </div>
               </div>
@@ -320,73 +330,48 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>TC02_LessonName_CreditScore_Girilip_Submit_Yapilmasi</div>
+        <div class="node" id="14"><span class="badge log pass-bg mr-2">Pass</span>TC02</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullanici_sayfaya_gider_ve_vice_dean_olarak_login_olur()">
-                <span>Given kullanici sayfaya gider ve Vice Dean olarak Login olur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_anasayfaya_gider()">
+                <span>Given Kullanici Anasayfaya gider</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US07Omer.kullanici_hesabina_erisim_sagladigini_dogrular()">
-                <span>Then kullanici hesabina erisim sagladigini dogrular</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_login_butonuna_tiklar()">
+                <span>When Kullanici login butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US07Omer.kullanici_menu_sekmesine_tiklar()">
-                <span>When kullanici menu sekmesine tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_user_name_alanina_valid_bir_değer_girer()">
+                <span>Then Kullanici user name alanina valid bir değer girer</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullanici_lesson_managment_e_tiklar()">
-                <span>Then kullanici Lesson Managment'e tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_password_alanina_valid_bir_değer_girer()">
+                <span>Then Kullanici password alanina valid bir değer girer</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonATiklar()">
-                <span>Then kullanici lesson'a tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullaniciLastLoginButonunaTiklar()">
+                <span>Then Kullanici lastLogin butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonNameKutusunuGorur()">
-                <span>Given kullanici Lesson Name kutusunu gorur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_menu_butonuna_tiklar()">
+                <span>Then Kullanici menu butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciCreditScoreKutucusunuGorur()">
-                <span>Then kullanici Credit Score kutucusunu gorur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_main_menu_alaninda_yer_alan_contact_get_all_linkini_tiklar()">
+                <span>Then Kullanici Main Menu alaninda yer alan Contact Get All linkini tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonNameKutusuAltındakiRequiredYazisiniGorur()">
-                <span>Then kullanici Lesson Name kutusu altındaki Required yazisini gorur</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciCreditScoreKutusuAltındakiRequiredYazisiniGorur()">
-                <span>Then Kullanici Credit Score kutusu altındaki Required yazisini gorur</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonNameIcinDataGirer()">
-                <span>When kullanici Lesson Name icin data girer</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciCreditScoreIcinDataGirer()">
-                <span>When kullanici Credit Score icin data girer</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciSubmitTusunaBasar()">
-                <span>Then kullanici Submit tusuna basar</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciYazisiniGorur(java.lang.String)">
-                <span>Then kullanici "Lesson Created" yazisini gorur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.thenKullaniciContactGetAllAlanindaYerAlanMesajlariGoruntuler()">
+                <span>Then Then Kullanici Contact Get All alaninda yer alan mesajlari goruntuler</span>
       <div>
       </div>
               </div>
@@ -401,73 +386,48 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="29"><span class="badge log pass-bg mr-2">Pass</span>TC03_Credit_Score_alanina_harf_girilememesi</div>
+        <div class="node" id="26"><span class="badge log pass-bg mr-2">Pass</span>TC03</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullanici_sayfaya_gider_ve_vice_dean_olarak_login_olur()">
-                <span>Given kullanici sayfaya gider ve Vice Dean olarak Login olur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_anasayfaya_gider()">
+                <span>Given Kullanici Anasayfaya gider</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US07Omer.kullanici_hesabina_erisim_sagladigini_dogrular()">
-                <span>Then kullanici hesabina erisim sagladigini dogrular</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_login_butonuna_tiklar()">
+                <span>When Kullanici login butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US07Omer.kullanici_menu_sekmesine_tiklar()">
-                <span>When kullanici menu sekmesine tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_user_name_alanina_valid_bir_değer_girer()">
+                <span>Then Kullanici user name alanina valid bir değer girer</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullanici_lesson_managment_e_tiklar()">
-                <span>Then kullanici Lesson Managment'e tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_password_alanina_valid_bir_değer_girer()">
+                <span>Then Kullanici password alanina valid bir değer girer</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonATiklar()">
-                <span>Then kullanici lesson'a tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullaniciLastLoginButonunaTiklar()">
+                <span>Then Kullanici lastLogin butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonNameKutusunuGorur()">
-                <span>Given kullanici Lesson Name kutusunu gorur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_menu_butonuna_tiklar()">
+                <span>Then Kullanici menu butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciCreditScoreKutucusunuGorur()">
-                <span>Then kullanici Credit Score kutucusunu gorur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_main_menu_alaninda_yer_alan_contact_get_all_linkini_tiklar()">
+                <span>Then Kullanici Main Menu alaninda yer alan Contact Get All linkini tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonNameKutusuAltındakiRequiredYazisiniGorur()">
-                <span>Then kullanici Lesson Name kutusu altındaki Required yazisini gorur</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciCreditScoreKutusuAltındakiRequiredYazisiniGorur()">
-                <span>Then Kullanici Credit Score kutusu altındaki Required yazisini gorur</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonNameIcinDataGirer()">
-                <span>When kullanici Lesson Name icin data girer</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciCreditScoreIcinHarfGirer()">
-                <span>When kullanici Credit Score icin harf girer</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciSubmitTusunaBasar()">
-                <span>Then kullanici Submit tusuna basar</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciUyarisiniAlmalidir(java.lang.String)">
-                <span>Then kullanici "JSON parse error" uyarisini almalidir</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullaniciContactGetAllAlanindaYerAlanMesajlarinYazarlariniGoruntuler()">
+                <span>Then Kullanici Contact Get All alaninda yer alan mesajlarin yazarlarini goruntuler</span>
       <div>
       </div>
               </div>
@@ -482,73 +442,48 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>TC04_Credit_Score_alanina_ozel_karakter_girilememesi</div>
+        <div class="node" id="38"><span class="badge log pass-bg mr-2">Pass</span>TC04</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullanici_sayfaya_gider_ve_vice_dean_olarak_login_olur()">
-                <span>Given kullanici sayfaya gider ve Vice Dean olarak Login olur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_anasayfaya_gider()">
+                <span>Given Kullanici Anasayfaya gider</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US07Omer.kullanici_hesabina_erisim_sagladigini_dogrular()">
-                <span>Then kullanici hesabina erisim sagladigini dogrular</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_login_butonuna_tiklar()">
+                <span>When Kullanici login butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US07Omer.kullanici_menu_sekmesine_tiklar()">
-                <span>When kullanici menu sekmesine tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_user_name_alanina_valid_bir_değer_girer()">
+                <span>Then Kullanici user name alanina valid bir değer girer</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullanici_lesson_managment_e_tiklar()">
-                <span>Then kullanici Lesson Managment'e tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_password_alanina_valid_bir_değer_girer()">
+                <span>Then Kullanici password alanina valid bir değer girer</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonATiklar()">
-                <span>Then kullanici lesson'a tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullaniciLastLoginButonunaTiklar()">
+                <span>Then Kullanici lastLogin butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonNameKutusunuGorur()">
-                <span>Given kullanici Lesson Name kutusunu gorur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_menu_butonuna_tiklar()">
+                <span>Then Kullanici menu butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciCreditScoreKutucusunuGorur()">
-                <span>Then kullanici Credit Score kutucusunu gorur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_main_menu_alaninda_yer_alan_contact_get_all_linkini_tiklar()">
+                <span>Then Kullanici Main Menu alaninda yer alan Contact Get All linkini tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonNameKutusuAltındakiRequiredYazisiniGorur()">
-                <span>Then kullanici Lesson Name kutusu altındaki Required yazisini gorur</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciCreditScoreKutusuAltındakiRequiredYazisiniGorur()">
-                <span>Then Kullanici Credit Score kutusu altındaki Required yazisini gorur</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonNameIcinDataGirer()">
-                <span>When kullanici Lesson Name icin data girer</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciCreditScoreIcinOzelKarakterGirer()">
-                <span>When kullanici Credit Score icin ozel karakter girer</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciSubmitTusunaBasar()">
-                <span>Then kullanici Submit tusuna basar</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciUyarisiniAlmalidir(java.lang.String)">
-                <span>Then kullanici "JSON parse error" uyarisini almalidir</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullaniciContactGetAllAlanindaYerAlanMesajlarinEMailleriniGoruntuler()">
+                <span>Then Kullanici Contact Get All alaninda yer alan mesajlarin e-maillerini goruntuler</span>
       <div>
       </div>
               </div>
@@ -563,53 +498,48 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="63"><span class="badge log pass-bg mr-2">Pass</span>TC05_Compulsory_Alani_Tiklanmadan_Ders_Kaydi_Yapilmasi</div>
+        <div class="node" id="50"><span class="badge log pass-bg mr-2">Pass</span>TC05</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullanici_sayfaya_gider_ve_vice_dean_olarak_login_olur()">
-                <span>Given kullanici sayfaya gider ve Vice Dean olarak Login olur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_anasayfaya_gider()">
+                <span>Given Kullanici Anasayfaya gider</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US07Omer.kullanici_hesabina_erisim_sagladigini_dogrular()">
-                <span>Then kullanici hesabina erisim sagladigini dogrular</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_login_butonuna_tiklar()">
+                <span>When Kullanici login butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US07Omer.kullanici_menu_sekmesine_tiklar()">
-                <span>When kullanici menu sekmesine tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_user_name_alanina_valid_bir_değer_girer()">
+                <span>Then Kullanici user name alanina valid bir değer girer</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullanici_lesson_managment_e_tiklar()">
-                <span>Then kullanici Lesson Managment'e tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_password_alanina_valid_bir_değer_girer()">
+                <span>Then Kullanici password alanina valid bir değer girer</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonATiklar()">
-                <span>Then kullanici lesson'a tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullaniciLastLoginButonunaTiklar()">
+                <span>Then Kullanici lastLogin butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonNameIcinDataGirer()">
-                <span>Given kullanici Lesson Name icin data girer</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_menu_butonuna_tiklar()">
+                <span>Then Kullanici menu butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciCreditScoreIcinDataGirer()">
-                <span>Then kullanici Credit Score icin data girer</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_main_menu_alaninda_yer_alan_contact_get_all_linkini_tiklar()">
+                <span>Then Kullanici Main Menu alaninda yer alan Contact Get All linkini tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciSubmitTusunaBasar()">
-                <span>Then kullanici Submit tusuna basar</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciYazisiniGorur(java.lang.String)">
-                <span>Then kullanici "Lesson Created" yazisini gorur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullaniciContactGetAllAlanindaYerAlanMesajlarinGonderilmeTarihleriniGoruntuler()">
+                <span>Then Kullanici Contact Get All alaninda yer alan mesajlarin gonderilme tarihlerini goruntuler</span>
       <div>
       </div>
               </div>
@@ -624,63 +554,48 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="76"><span class="badge log pass-bg mr-2">Pass</span>TC06_Compulsory_Alani_Tiklanarak_Ders_Kaydi_Yapilmasi</div>
+        <div class="node" id="62"><span class="badge log pass-bg mr-2">Pass</span>TC06</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullanici_sayfaya_gider_ve_vice_dean_olarak_login_olur()">
-                <span>Given kullanici sayfaya gider ve Vice Dean olarak Login olur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_anasayfaya_gider()">
+                <span>Given Kullanici Anasayfaya gider</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US07Omer.kullanici_hesabina_erisim_sagladigini_dogrular()">
-                <span>Then kullanici hesabina erisim sagladigini dogrular</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_login_butonuna_tiklar()">
+                <span>When Kullanici login butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US07Omer.kullanici_menu_sekmesine_tiklar()">
-                <span>When kullanici menu sekmesine tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_user_name_alanina_valid_bir_değer_girer()">
+                <span>Then Kullanici user name alanina valid bir değer girer</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullanici_lesson_managment_e_tiklar()">
-                <span>Then kullanici Lesson Managment'e tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_password_alanina_valid_bir_değer_girer()">
+                <span>Then Kullanici password alanina valid bir değer girer</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonATiklar()">
-                <span>Then kullanici lesson'a tiklar</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullaniciLastLoginButonunaTiklar()">
+                <span>Then Kullanici lastLogin butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciLessonNameIcinDataGirer()">
-                <span>Given kullanici Lesson Name icin data girer</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_menu_butonuna_tiklar()">
+                <span>Then Kullanici menu butonuna tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciKutucugununVarliginiDogrular(java.lang.String)">
-                <span>When kullanici "Compulsory" kutucugunun varligini dogrular</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanici_main_menu_alaninda_yer_alan_contact_get_all_linkini_tiklar()">
+                <span>Then Kullanici Main Menu alaninda yer alan Contact Get All linkini tiklar</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciCompulsoryKutucugunaTiklar()">
-                <span>Then kullanici Compulsory kutucuguna tiklar</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciCreditScoreIcinDataGirer()">
-                <span>Then kullanici Credit Score icin data girer</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciSubmitTusunaBasar()">
-                <span>Then kullanici Submit tusuna basar</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.US08Omer.kullaniciYazisiniGorur(java.lang.String)">
-                <span>Then kullanici "Lesson Created" yazisini gorur</span>
+              <div class="step pass-bg" title="stepdefinitions.US07_Fatih.kullanıcıContactGetAllAlanındaYerAlanMesajlarınSubjectBilgileriniGoruntuler()">
+                <span>Then Kullanıcı Contact Get All alanında yer alan mesajların subject bilgilerini görüntüler</span>
       <div>
       </div>
               </div>
@@ -717,12 +632,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>6</span>
 </span>
-<p class="name">@Us08Omer</p>
+<p class="name">@us07_fatih</p>
 <p class="duration text-sm">6 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Us08Omer</h4>
+<h4>@us07_fatih</h4>
 <span status="pass" class='badge log pass-bg'>6 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -736,61 +651,61 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:10:25 PM</td>
+<td>17:44:40 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC01_sign_olup_lesson_mangmente_tiklama</a>
+<a href="#" class="linked" test-id='1' id='2'>TC01</a>
 <div class="">
-<span class="badge badge-default">Vice Dean ders olusturabilmelidir.TC01_sign_olup_lesson_mangmente_tiklama</span>
+<span class="badge badge-default">TC01_Dean_mesajlari goruntuleyebilmelidir.TC01</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:10:36 PM</td>
+<td>17:44:44 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='12'>TC02_LessonName_CreditScore_Girilip_Submit_Yapilmasi</a>
+<a href="#" class="linked" test-id='1' id='14'>TC02</a>
 <div class="">
-<span class="badge badge-default">Vice Dean ders olusturabilmelidir.TC02_LessonName_CreditScore_Girilip_Submit_Yapilmasi</span>
+<span class="badge badge-default">TC01_Dean_mesajlari goruntuleyebilmelidir.TC02</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:10:44 PM</td>
+<td>17:44:47 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='29'>TC03_Credit_Score_alanina_harf_girilememesi</a>
+<a href="#" class="linked" test-id='1' id='26'>TC03</a>
 <div class="">
-<span class="badge badge-default">Vice Dean ders olusturabilmelidir.TC03_Credit_Score_alanina_harf_girilememesi</span>
+<span class="badge badge-default">TC01_Dean_mesajlari goruntuleyebilmelidir.TC03</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:10:52 PM</td>
+<td>17:44:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='46'>TC04_Credit_Score_alanina_ozel_karakter_girilememesi</a>
+<a href="#" class="linked" test-id='1' id='38'>TC04</a>
 <div class="">
-<span class="badge badge-default">Vice Dean ders olusturabilmelidir.TC04_Credit_Score_alanina_ozel_karakter_girilememesi</span>
+<span class="badge badge-default">TC01_Dean_mesajlari goruntuleyebilmelidir.TC04</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:11:01 PM</td>
+<td>17:44:52 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='63'>TC05_Compulsory_Alani_Tiklanmadan_Ders_Kaydi_Yapilmasi</a>
+<a href="#" class="linked" test-id='1' id='50'>TC05</a>
 <div class="">
-<span class="badge badge-default">Vice Dean ders olusturabilmelidir.TC05_Compulsory_Alani_Tiklanmadan_Ders_Kaydi_Yapilmasi</span>
+<span class="badge badge-default">TC01_Dean_mesajlari goruntuleyebilmelidir.TC05</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:11:09 PM</td>
+<td>17:44:55 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='76'>TC06_Compulsory_Alani_Tiklanarak_Ders_Kaydi_Yapilmasi</a>
+<a href="#" class="linked" test-id='1' id='62'>TC06</a>
 <div class="">
-<span class="badge badge-default">Vice Dean ders olusturabilmelidir.TC06_Compulsory_Alani_Tiklanarak_Ders_Kaydi_Yapilmasi</span>
+<span class="badge badge-default">TC01_Dean_mesajlari goruntuleyebilmelidir.TC06</span>
 </div>
 </td>
 </tr>

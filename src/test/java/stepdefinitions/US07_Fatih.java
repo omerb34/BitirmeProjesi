@@ -13,7 +13,7 @@ public class US07_Fatih {
 
     @Given("Kullanici Anasayfaya gider")
     public void kullanici_anasayfaya_gider() {
-        Driver.getDriver().get(ConfigReader.getProperty("app_url"));
+        Driver.getDriver().get(ConfigReader.getProperty("base_url"));
 
     }
 
@@ -55,7 +55,7 @@ public class US07_Fatih {
 
     @Then("Kullanici Contact Get All alaninda yer alan mesajlarin yazarlarini goruntuler")
     public void kullaniciContactGetAllAlanindaYerAlanMesajlarinYazarlariniGoruntuler() {
-        Assert.assertTrue(loginPageFatih.mesajlarinYazarlari.isDisplayed());
+        Assert.assertTrue(loginPageFatih.deanMesajYazarlari.isDisplayed());
     }
 
     @Then("Kullanici Contact Get All alaninda yer alan mesajlarin e-maillerini goruntuler")
@@ -65,7 +65,7 @@ public class US07_Fatih {
 
     @Then("Kullanici Contact Get All alaninda yer alan mesajlarin gonderilme tarihlerini goruntuler")
     public void kullaniciContactGetAllAlanindaYerAlanMesajlarinGonderilmeTarihleriniGoruntuler() {
-        Assert.assertTrue(loginPageFatih.mesajlarinTarihleri.isDisplayed());
+        Assert.assertTrue(loginPageFatih.deanMesajTarihleri.isDisplayed());
     }
 
     @When("{int} sn bekler")
