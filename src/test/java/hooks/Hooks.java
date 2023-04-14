@@ -7,6 +7,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
+import static base_urls.SchollManagBaseUrl.schollManSetup;
+
 public class Hooks {
 /*
 Hooks : Her bir Scenario yada Scenario Outline dan ONCE yada SONRA calismasini istedigim metotlar konur
@@ -14,10 +16,7 @@ Hooks : Her bir Scenario yada Scenario Outline dan ONCE yada SONRA calismasini i
 Burda onemli olan raporlama isleminin ekran goruntusuyle birlikde Hooks yardimiyla yapilmasidir
  */
     @Before
-  public void setUpScenarios(){
-       System.out.println("Before Metotu");
-  }
-    public void schollManSetup(){
+    public void beforapi(){
         schollManSetup();
     }
 

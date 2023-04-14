@@ -10,8 +10,7 @@ public class DenemeStepDef {
     @Given("kullanici siteye gider")
     public void kullaniciSiteyeGider() {
         // get the url
-//  spec.pathParam("first","login");
-        String url = "https://www.managementonschools.com/login";
-        Driver.getDriver().get(url);
+        spec.pathParam("first", "login");
+
     }
 }
