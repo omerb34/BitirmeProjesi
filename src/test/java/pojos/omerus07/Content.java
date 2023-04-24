@@ -1,4 +1,4 @@
-package pojos;
+package pojos.omerus07;
 
 public class Content {
     private String name;
