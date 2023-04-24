@@ -1,4 +1,4 @@
-package pojos;
+package pojos.omerus07;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,6 @@
-package pojos;
+package pojos.omerus07;
+
+import pojos.omerus07.Sort;
 
 public class Pageable {
     private Sort sort;
