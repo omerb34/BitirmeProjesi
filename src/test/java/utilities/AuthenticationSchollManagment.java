@@ -12,13 +12,13 @@ public class AuthenticationSchollManagment {
     public static String generateToken(){
 
         Map<String, Object> bodyMap = new HashMap<>();
-        bodyMap.put("password","12345678");
-        bodyMap.put("username","OMERBB");
+        bodyMap.put("password","485424698");
+        bodyMap.put("username","Admin");
 
         Response response = given().
                 contentType(ContentType.JSON).
                 body(bodyMap).
-                post("https://school-management-v1.herokuapp.com/auth/login");
+                post("http://209.38.244.227/auth/login");
         return  response.jsonPath().getString("token");
     }
 }
