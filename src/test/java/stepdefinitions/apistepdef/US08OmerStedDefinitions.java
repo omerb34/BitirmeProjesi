@@ -47,24 +47,27 @@ public class US08OmerStedDefinitions {
 
     }
 
-  // @Then("user sends post request to create a lesson without Compulsory.")
-  // public void userSendsPostRequestToCreateALessonWithoutCompulsory() {
-  //     spec.pathParams("first", "lessons", "second", "save");
+    @Then("user sends post request to create a lesson without Compulsory.")
+    public void userSendsPostRequestToCreateALessonWithoutCompulsory() {
+        //Set the Url
+        spec.pathParams("first", "lessons", "second", "save");
 
-  //     faker = new Faker();
-  //     DataPojo dataobje= new DataPojo(12,faker.funnyName().name(),faker.number().randomDigitNotZero(),false);
-  //     expectedData= new CreateLessonMainPojo(dataobje,"Lesson Created","OK");
+        //Set the expected data
+        faker = new Faker();
+        DataPojo dataobje= new DataPojo(99,faker.name().username(),faker.number().randomDigitNotZero(),false);
+        expectedData= new CreateLessonMainPojo(dataobje,"Lesson Created","OK");
 
-  //     response = given().spec(spec).body(dataobje).post("/{first}/{second}");
-  //     response.prettyPrint();
+        //Send request and get response
+        response = given().spec(spec).body(dataobje).post("/{first}/{second}");
+        response.prettyPrint();
 
-  //     actualData= response.as(CreateLessonMainPojo.class);
-  //     assertEquals(200, response.getStatusCode());
-  //     assertEquals(expectedData.getMessage(),actualData.getMessage());
-  //     assertEquals(expectedData.getHttpStatus(),actualData.getHttpStatus());
-  //     assertEquals(expectedData.getObject().getLessonName(),actualData.getObject().getLessonName());
-  //     assertEquals(expectedData.getObject().getCreditScore(),actualData.getObject().getCreditScore());
+        //Do assertions
+        actualData= response.as(CreateLessonMainPojo.class);
+        assertEquals(200, response.getStatusCode());
+        assertEquals(expectedData.getMessage(),actualData.getMessage());
+        assertEquals(expectedData.getHttpStatus(),actualData.getHttpStatus());
+        assertEquals(expectedData.getObject().getLessonName(),actualData.getObject().getLessonName());
+        assertEquals(expectedData.getObject().getCreditScore(),actualData.getObject().getCreditScore());
 
-
-  // }
+    }
 }
