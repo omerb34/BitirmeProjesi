@@ -16,7 +16,7 @@ public class SchollManagBaseUrl {
         spec = new RequestSpecBuilder().
                 setContentType(ContentType.JSON).
                 addHeader("Authorization", AuthenticationSchollManagment.generateToken()).
-                setBaseUri("http://209.38.244.227/").build();
+                setBaseUri("https://www.managementonschools.com/").build();
 
     }
 }

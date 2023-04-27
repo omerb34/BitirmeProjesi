@@ -5,7 +5,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 import static base_urls.SchollManagBaseUrl.spec;
@@ -13,7 +12,7 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class OmerStepDefinitions {
+public class US_07_DeanKullaniciMeasajlariniGorur {
 
     Response response;
 
