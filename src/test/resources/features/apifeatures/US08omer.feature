@@ -1,4 +1,4 @@
-@Us08
+@omerb
 Feature: Vice Dean creates a lesson
 
   Scenario:TC01_Create_Lesson

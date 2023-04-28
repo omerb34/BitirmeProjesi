@@ -18,7 +18,7 @@ public class AuthenticationSchollManagment {
         Response response = given().
                 contentType(ContentType.JSON).
                 body(bodyMap).
-                post("https://www.managementonschools.com/auth/login");
+                post("http://139.59.159.36:3000/auth/login");
         return  response.jsonPath().getString("token");
     }
 }
