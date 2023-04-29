@@ -1,14 +1,14 @@
 package pojos.omerus07;
 
-public class Sort {
+public class US07_ContactMessage_Sort {
     private boolean sorted;
     private boolean empty;
     private boolean unsorted;
 
-    public Sort() {
+    public US07_ContactMessage_Sort() {
     }
 
-    public Sort(boolean sorted, boolean empty, boolean unsorted) {
+    public US07_ContactMessage_Sort(boolean sorted, boolean empty, boolean unsorted) {
         this.sorted = sorted;
         this.empty = empty;
         this.unsorted = unsorted;

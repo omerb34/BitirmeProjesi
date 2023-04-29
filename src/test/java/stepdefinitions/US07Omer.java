@@ -24,7 +24,7 @@ public class US07Omer {
 
     @Then("kullanici hesabina erisim sagladigini dogrular")
     public void kullanici_hesabina_erisim_sagladigini_dogrular() {
-        Assert.assertTrue(loginPage.girisDogrulama.getText().contains("Omer"));
+        Assert.assertTrue(loginPage.girisDogrulama.getText().contains("ViceDeanTeam_17"));
     }
     @When("kullanici menu sekmesine tiklar")
     public void kullanici_menu_sekmesine_tiklar() {

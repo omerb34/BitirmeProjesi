@@ -46,7 +46,7 @@ Feature: Vice Dean ders olusturabilmelidir
     Then kullanici sayfayi kapatir
 
   Scenario:TC05_Compulsory_Alani_Tiklanmadan_Ders_Kaydi_Yapilmasi
-    Given kullanici Lesson Name icin data girer
+    Given kullanici Lesson Name icin data girerr
     Then kullanici Credit Score icin data girer
     Then kullanici Submit tusuna basar
     Then kullanici "Lesson Created" yazisini gorur
@@ -54,7 +54,7 @@ Feature: Vice Dean ders olusturabilmelidir
 
 
   Scenario:  TC06_Compulsory_Alani_Tiklanarak_Ders_Kaydi_Yapilmasi
-    Given kullanici Lesson Name icin data girer
+    Given kullanici Lesson Name icin data girerrr
     When kullanici "Compulsory" kutucugunun varligini dogrular
     Then kullanici Compulsory kutucuguna tiklar
     Then kullanici Credit Score icin data girer

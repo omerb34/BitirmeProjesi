@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
@@ -66,12 +67,12 @@ public class US08Omer {
     }
     @When("kullanici Lesson Name icin data girer")
     public void kullaniciLessonNameIcinDataGirer() {
-        lessonManagmentPage.lessonName.sendKeys(faker.name().name());
+        lessonManagmentPage.lessonName.sendKeys("OrtaCagTarihi",Keys.TAB,Keys.TAB);
     }
 
     @When("kullanici Credit Score icin data girer")
     public void kullaniciCreditScoreIcinDataGirer() {
-        lessonManagmentPage.creditScore.sendKeys("5");
+        lessonManagmentPage.creditScore.sendKeys("8");
     }
 
 
@@ -112,6 +113,16 @@ public class US08Omer {
     @Then("kullanici Compulsory kutucuguna tiklar")
     public void kullaniciCompulsoryKutucugunaTiklar() {
         lessonManagmentPage.compulsoryKutucuk.click();
+    }
+
+    @Given("kullanici Lesson Name icin data girerr")
+    public void kullaniciLessonNameIcinDataGirerr() {
+        lessonManagmentPage.lessonName.sendKeys("DenemeDersiOmer", Keys.TAB,Keys.TAB);
+    }
+
+    @Given("kullanici Lesson Name icin data girerrr")
+    public void kullaniciLessonNameIcinDataGirerrr() {
+        lessonManagmentPage.lessonName.sendKeys("SiyasetFelsefesi", Keys.TAB,Keys.TAB);
     }
 }
 

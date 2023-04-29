@@ -1,19 +1,17 @@
 package pojos.omerus07;
 
-import pojos.omerus07.Sort;
-
-public class Pageable {
-    private Sort sort;
+public class US07_ContactMessage_Pageable {
+    private US07_ContactMessage_Sort sort;
     private  int pageNumber;
     private  int pageSize;
     private  int offset;
     private  boolean unpaged;
     private  boolean paged;
 
-    public Pageable() {
+    public US07_ContactMessage_Pageable() {
     }
 
-    public Pageable(Sort sort, int pageNumber, int pageSize, int offset, boolean unpaged, boolean paged) {
+    public US07_ContactMessage_Pageable(US07_ContactMessage_Sort sort, int pageNumber, int pageSize, int offset, boolean unpaged, boolean paged) {
         this.sort = sort;
         this.pageNumber = pageNumber;
         this.pageSize = pageSize;
@@ -22,11 +20,11 @@ public class Pageable {
         this.paged = paged;
     }
 
-    public Sort getSort() {
+    public US07_ContactMessage_Sort getSort() {
         return sort;
     }
 
-    public void setSort(Sort sort) {
+    public void setSort(US07_ContactMessage_Sort sort) {
         this.sort = sort;
     }
 

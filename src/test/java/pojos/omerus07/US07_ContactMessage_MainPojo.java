@@ -2,23 +2,23 @@ package pojos.omerus07;
 
 import java.util.ArrayList;
 
-public class MainPojo {
-    private ArrayList<Content> content;
-    private Pageable pageable;
+public class US07_ContactMessage_MainPojo {
+    private ArrayList<US07_ContactMessage_Content> content;
+    private US07_ContactMessage_Pageable pageable;
     private int totalPages;
     private int totalElements;
     private boolean last;
     private boolean first;
-    private Sort sort;
+    private US07_ContactMessage_Sort sort;
     private int size;
     private int number;
     private int numberOfElements;
     private boolean empty;
 
-    public MainPojo() {
+    public US07_ContactMessage_MainPojo() {
     }
 
-    public MainPojo(ArrayList<Content> content, Pageable pageable, int totalPages, int totalElements, boolean last, boolean first, Sort sort, int size, int number, int numberOfElements, boolean empty) {
+    public US07_ContactMessage_MainPojo(ArrayList<US07_ContactMessage_Content> content, US07_ContactMessage_Pageable pageable, int totalPages, int totalElements, boolean last, boolean first, US07_ContactMessage_Sort sort, int size, int number, int numberOfElements, boolean empty) {
         this.content = content;
         this.pageable = pageable;
         this.totalPages = totalPages;
