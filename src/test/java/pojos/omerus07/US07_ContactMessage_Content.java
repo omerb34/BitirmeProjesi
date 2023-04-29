@@ -1,16 +1,16 @@
 package pojos.omerus07;
 
-public class Content {
+public class US07_ContactMessage_Content {
     private String name;
     private String email;
     private String subject;
     private String message;
     private String date;
 
-    public Content() {
+    public US07_ContactMessage_Content() {
     }
 
-    public Content(String name, String email, String subject, String message, String date) {
+    public US07_ContactMessage_Content(String name, String email, String subject, String message, String date) {
         this.name = name;
         this.email = email;
         this.subject = subject;
