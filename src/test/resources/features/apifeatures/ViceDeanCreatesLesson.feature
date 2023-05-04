@@ -1,4 +1,4 @@
-@apius08
+@e2e
 Feature: Vice Dean creates lessons
   Scenario:TC01_Create_Lesson
     Given Kullanici olusturdugu ilk dersi gormek icin bir get request gonderir
