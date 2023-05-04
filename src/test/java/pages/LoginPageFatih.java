@@ -35,16 +35,16 @@ public class LoginPageFatih {
     public WebElement deanMessages;
 
     @FindBy(xpath = "(//tbody//tr//td[1])[1]")
-    public WebElement mesajlarinYazarlari;
+    public WebElement deanMesajYazarlari;
 
     @FindBy(xpath = "(//tbody//tr//td[2])[1]")
     public WebElement mesajlarinEmailleri;
 
     @FindBy(xpath = "(//tbody//tr//td[3])[1]")
-    public WebElement mesajlarinTarihleri;
+    public WebElement deanMesajTarihleri;
 
     @FindBy(xpath = "(//tbody//tr//td[4])[1]")
-    public WebElement messageOfSubject;
+    public WebElement deanMessageOfSubject;
 
     @FindBy(xpath = "//*[@class='fw-semibold text-white bg-primary navbar-toggler collapsed']")
     public WebElement viceDeanMenuButton;

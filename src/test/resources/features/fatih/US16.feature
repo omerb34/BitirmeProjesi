@@ -1,8 +1,8 @@
 @us16
 Feature: US_16
   Background:
-    Given Kullanıcı Anasayfaya gider
-    When Kullanıcı login butonuna tıklar
+    #Given Kullanıcı Anasayfaya gider
+    When kullanici Login butonuna tiklar.
   Then Kullanıcı user name alanına valid bir değer girer
     Then Kullanıcı password alanına valid bir değer girer
     Then Kullanıcı lastLogin butonuna tıklar
