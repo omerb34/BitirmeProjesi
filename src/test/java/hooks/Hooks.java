@@ -15,7 +15,7 @@ Hooks : Her bir Scenario yada Scenario Outline dan ONCE yada SONRA calismasini i
 @Before ve @After metotlarini icerir
 Burda onemli olan raporlama isleminin ekran goruntusuyle birlikde Hooks yardimiyla yapilmasidir
  */
-    @Before
+    @Before()
     public void beforapi(){
         schollManSetup();
     }
