@@ -1,4 +1,6 @@
-package pojos;
+package pojos.fatih;
+
+import pojos.fatih.ObjectPojo;
 
 public class TeacherPojo {
     private ObjectPojo object;

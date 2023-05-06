@@ -1,47 +1,43 @@
-package pojos;
+package pojos.fatih;
 
-public class StudentPojo {
-    private int id;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties (ignoreUnknown = true)
+public class ObjectPojo {
+
+    private int userId;
     private String username;
-    private String ssn;
     private String name;
     private String surname;
     private String birthDay;
+    private String ssn;
     private String birthPlace;
     private String phoneNumber;
     private String gender;
-    private String motherName;
-    private String fatherName;
-    private int studentNumber;
     private String email;
-    private boolean active;
 
-    public StudentPojo() {
+    public ObjectPojo() {
     }
 
-    public StudentPojo(int id, String username, String ssn, String name, String surname, String birthDay, String birthPlace, String phoneNumber, String gender, String motherName, String fatherName, int studentNumber, String email, boolean active) {
-        this.id = id;
+    public ObjectPojo(int userId, String username, String name, String surname, String birthDay, String ssn, String birthPlace, String phoneNumber, String gender, String email) {
+        this.userId = userId;
         this.username = username;
-        this.ssn = ssn;
         this.name = name;
         this.surname = surname;
         this.birthDay = birthDay;
+        this.ssn = ssn;
         this.birthPlace = birthPlace;
         this.phoneNumber = phoneNumber;
         this.gender = gender;
-        this.motherName = motherName;
-        this.fatherName = fatherName;
-        this.studentNumber = studentNumber;
         this.email = email;
-        this.active = active;
     }
 
-    public int getId() {
-        return id;
+    public int getUserId() {
+        return userId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {
@@ -50,14 +46,6 @@ public class StudentPojo {
 
     public void setUsername(String username) {
         this.username = username;
-    }
-
-    public String getSsn() {
-        return ssn;
-    }
-
-    public void setSsn(String ssn) {
-        this.ssn = ssn;
     }
 
     public String getName() {
@@ -84,6 +72,14 @@ public class StudentPojo {
         this.birthDay = birthDay;
     }
 
+    public String getSsn() {
+        return ssn;
+    }
+
+    public void setSsn(String ssn) {
+        this.ssn = ssn;
+    }
+
     public String getBirthPlace() {
         return birthPlace;
     }
@@ -108,30 +104,6 @@ public class StudentPojo {
         this.gender = gender;
     }
 
-    public String getMotherName() {
-        return motherName;
-    }
-
-    public void setMotherName(String motherName) {
-        this.motherName = motherName;
-    }
-
-    public String getFatherName() {
-        return fatherName;
-    }
-
-    public void setFatherName(String fatherName) {
-        this.fatherName = fatherName;
-    }
-
-    public int getStudentNumber() {
-        return studentNumber;
-    }
-
-    public void setStudentNumber(int studentNumber) {
-        this.studentNumber = studentNumber;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -140,33 +112,19 @@ public class StudentPojo {
         this.email = email;
     }
 
-    public boolean isActive() {
-        return active;
-    }
-
-    public void setActive(boolean active) {
-        this.active = active;
-    }
-
     @Override
     public String toString() {
-        return "StudentPojo{" +
-                "id=" + id +
+        return "ObjectPojo{" +
+                "userId=" + userId +
                 ", username='" + username + '\'' +
-                ", ssn='" + ssn + '\'' +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", birthDay='" + birthDay + '\'' +
+                ", ssn='" + ssn + '\'' +
                 ", birthPlace='" + birthPlace + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", gender='" + gender + '\'' +
-                ", motherName='" + motherName + '\'' +
-                ", fatherName='" + fatherName + '\'' +
-                ", studentNumber=" + studentNumber +
                 ", email='" + email + '\'' +
-                ", active=" + active +
                 '}';
     }
 }
-
-
