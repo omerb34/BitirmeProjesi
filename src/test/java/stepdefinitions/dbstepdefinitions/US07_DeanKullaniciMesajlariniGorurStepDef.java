@@ -12,9 +12,6 @@ public class US07_DeanKullaniciMesajlariniGorurStepDef {
     ResultSet resultSet;
     Connection connection;
     Statement statement;
-
-
-
     @Given("Dean gets contact message with email")
     public void deanGetsContactMessageWithemail() throws SQLException {
         connection = DriverManager.getConnection("jdbc:postgresql://164.92.252.42:5432/school_management","select_user","43w5ijfso");
@@ -25,7 +22,6 @@ public class US07_DeanKullaniciMesajlariniGorurStepDef {
         //select * from contact_message where email='omrbrg@gmail.com'
 
         resultSet.next();
-
     }
     @Then("validate headers")
     public void validate_headers() throws SQLException {
@@ -34,9 +30,13 @@ public class US07_DeanKullaniciMesajlariniGorurStepDef {
         assertEquals("omrbrg@gmail.com",resultSet.getString(3));
         assertEquals("omerbb",resultSet.getString(6));
         assertEquals("sondenememesajıdb",resultSet.getString(4));
+        assertEquals("omer",resultSet.getString("name"));
 
-
+        connection.close();
+        statement.close();
+        resultSet.close();
     }
+
 
 
 }
