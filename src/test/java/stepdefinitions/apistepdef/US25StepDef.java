@@ -4,7 +4,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.response.Response;
 import org.junit.Assert;
-import pojos.StudentPojo;
+import pojos.fatih.StudentPojo;
 
 import static base_urls.SchollManagBaseUrl.spec;
 import static io.restassured.RestAssured.given;

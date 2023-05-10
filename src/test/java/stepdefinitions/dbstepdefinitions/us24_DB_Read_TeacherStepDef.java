@@ -1,4 +1,4 @@
-package stepdefinitions.apistepdef;
+package stepdefinitions.dbstepdefinitions;
 
 import io.cucumber.java.en.*;
 
@@ -7,7 +7,7 @@ import java.sql.*;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class DB_Read_TeacherStepDef {
+public class us24_DB_Read_TeacherStepDef {
 
     Connection connection;
     ResultSet resultSet;
