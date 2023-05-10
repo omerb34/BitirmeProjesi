@@ -1,4 +1,4 @@
-@us7
+@omerapi
 Feature:Gel All Message
 Scenario: Dean_Kullanici_Mesajlarını_Gorur
   Given user tum kullanici mesajları icin bir get request yollar
