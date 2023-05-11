@@ -67,7 +67,7 @@ public class US08Omer {
     }
     @When("kullanici Lesson Name icin data girer")
     public void kullaniciLessonNameIcinDataGirer() {
-        lessonManagmentPage.lessonName.sendKeys("OrtaCagTarihi",Keys.TAB,Keys.TAB);
+        lessonManagmentPage.lessonName.sendKeys("KamuKontrolYonetimi",Keys.TAB,Keys.TAB);
     }
 
     @When("kullanici Credit Score icin data girer")
@@ -117,12 +117,12 @@ public class US08Omer {
 
     @Given("kullanici Lesson Name icin data girerr")
     public void kullaniciLessonNameIcinDataGirerr() {
-        lessonManagmentPage.lessonName.sendKeys("DenemeDersiOmer", Keys.TAB,Keys.TAB);
+        lessonManagmentPage.lessonName.sendKeys("DenemeDersiOmer2", Keys.TAB,Keys.TAB);
     }
 
     @Given("kullanici Lesson Name icin data girerrr")
     public void kullaniciLessonNameIcinDataGirerrr() {
-        lessonManagmentPage.lessonName.sendKeys("SiyasetFelsefesi", Keys.TAB,Keys.TAB);
+        lessonManagmentPage.lessonName.sendKeys("Human_Rights", Keys.TAB,Keys.TAB);
     }
 }
 
