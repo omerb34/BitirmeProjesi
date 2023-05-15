@@ -1,4 +1,4 @@
-package stepdefinitions;
+package stepdefinitions.UI_Part;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
