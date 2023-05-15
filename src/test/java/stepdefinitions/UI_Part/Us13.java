@@ -1,4 +1,4 @@
-package stepdefinitions;
+package stepdefinitions.UI_Part;
 
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.*;
@@ -56,11 +56,13 @@ public class Us13 {
     @Then("fill in birth place")
     public void fill_in_birth_place() {
         teacherManagementPage.birthPlace.sendKeys(faker.address().cityName());
+        Driver.wait(3);
     }
 
     @Then("fill in mailBox and phoneBox")
     public void fill_in_mail_box_and_phone_box() {
-        teacherManagementPage.mailAdress.sendKeys(faker.internet().emailAddress());
+        teacherManagementPage.mailAdress.sendKeys("ali@bey");
+        Driver.wait(3);
         teacherManagementPage.phoneNumber.sendKeys(generatePhoneNumber());
         Driver.wait(3);
 
@@ -81,6 +83,8 @@ public class Us13 {
     @Then("fill ssn, username and password")
     public void fill_ssn_username_and_password() throws InterruptedException {
         teacherManagementPage.Ssn.sendKeys(generateSSN());
+        Driver.wait(3);
+
         teacherManagementPage.username.sendKeys(faker.name().username());
         teacherManagementPage.password.sendKeys("12345678");
         Thread.sleep(4000);
